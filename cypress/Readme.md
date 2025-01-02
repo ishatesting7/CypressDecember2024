@@ -156,3 +156,18 @@ Git Process
 
 3. Create your account on - https://github.com/login
 
+
+---------
+
+- git init
+
+
+If you are doing via VS Code
+
+- Create a public repo and push all the changes
+- git add <filename> or git add .
+- git commit -m "Add your message"
+- git push
+
+
+
