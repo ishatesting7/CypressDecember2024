@@ -1,0 +1,21 @@
+{
+  "name": "cypressdecember2024",
+  "version": "1.0.0",
+  "description": "Basic of Cypress and Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cypress",
+    "visit",
+    "request"
+  ],
+  "author": "VB",
+  "license": "ISC",
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.5",
+    "cypress": "^13.16.1",
+    "cypress-xpath": "^2.0.1"
+  }
+}
