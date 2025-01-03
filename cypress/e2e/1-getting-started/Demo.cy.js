@@ -4,7 +4,6 @@ describe('Login Test Scenario', ()=>{
 
         cy.visit(' https://on.cypress.io/visit');
         cy.wait(2000);
-        cy.pause();
-
+        cy.pause(); 
     })
 })
