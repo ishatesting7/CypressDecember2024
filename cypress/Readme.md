@@ -171,3 +171,6 @@ If you are doing via VS Code
 
 
 
+Once you clone the Project -
+Trigger command in Terminal - npm i or npm install
+

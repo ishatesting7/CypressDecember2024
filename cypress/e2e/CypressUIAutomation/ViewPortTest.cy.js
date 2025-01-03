@@ -24,4 +24,9 @@ describe('ViewPort Command', ()=>{
         cy.viewport(550, 750)
         cy.visit('https://blazedemo.com/')
     })
+
+    it('This is taking the value from Config file', ()=>{
+        cy.visit('https://blazedemo.com/');
+        
+    })
 })
