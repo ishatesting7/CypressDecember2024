@@ -174,3 +174,9 @@ If you are doing via VS Code
 Once you clone the Project -
 Trigger command in Terminal - npm i or npm install
 
+
+-------
+3 Programs 
+1. Check weather string is palindrome
+2. Count the number of character in a given string
+3. Reverse a String
