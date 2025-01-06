@@ -10,7 +10,26 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+Cypress.Commands.add('loginOrange', (email, password, flag) => { 
+
+    cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+    cy.get('[name="username"]').type(email);
+    cy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input').type(password);
+    cy.get('.oxd-button').click();
+    cy.log(flag)
+ })
+
+ Cypress.Commands.add('validateLocator', (locator) => { 
+
+    cy.get(locator).should('be.visible');
+
+ })
+
+ Cypress.Commands.add('containValue', (value) => { 
+
+    cy.contains(value).should('be.visible');
+
+ })
 //
 //
 // -- This is a child command --
@@ -27,6 +46,5 @@
 /// <reference types= "cypress" /> 
 
 require('cypress-xpath');
-
 
 require('@4tw/cypress-drag-drop')
