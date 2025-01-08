@@ -1,5 +1,14 @@
 {
   "id": 8739,
   "username": "Admin",
-  "password": "admin123"
+  "password": "admin123",
+  "cities":[{
+    "city":"Mumbai"
+  },
+  {
+    "city":"Bangalore"
+  },
+  {
+    "city":"Hyderabad"
+  }]
 }
