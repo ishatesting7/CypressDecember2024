@@ -29,7 +29,13 @@ describe('Web Table', ()=>{
 
     it('Click Pagination - 2 and again you need to click 1', ()=>{
 
-        
+
     })
 
+    //utility file
+    // 1500 function
+    // locateByXpath
+    // locateByXpathAndType
+    // locationByXpath
+    
 })
