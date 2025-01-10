@@ -180,3 +180,10 @@ Trigger command in Terminal - npm i or npm install
 1. Check weather string is palindrome
 2. Count the number of character in a given string
 3. Reverse a String
+
+
+Assignment - 10th Jan - 2025
+
+- Read all the table value from the table.
+- Count the number of rows and columns 
+- Click on the pagination at the bottom of the page
