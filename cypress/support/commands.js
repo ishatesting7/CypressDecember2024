@@ -48,3 +48,5 @@ Cypress.Commands.add('loginOrange', (email, password, flag) => {
 require('cypress-xpath');
 
 require('@4tw/cypress-drag-drop')
+
+require('cypress-iframe');
