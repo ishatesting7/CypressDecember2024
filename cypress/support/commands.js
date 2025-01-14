@@ -50,3 +50,7 @@ require('cypress-xpath');
 require('@4tw/cypress-drag-drop')
 
 require('cypress-iframe');
+
+import 'cypress-file-upload';
+
+require('cypress-downloadfile/lib/downloadFileCommand')
