@@ -54,3 +54,10 @@ require('cypress-iframe');
 import 'cypress-file-upload';
 
 require('cypress-downloadfile/lib/downloadFileCommand')
+
+const XLSX = require('xlsx');
+Cypress.Commands.add('readExcelFile', (filePath) => {
+   return cy.task('readExcelFile', filePath);
+ });
+
+ import 'cypress-iframe';

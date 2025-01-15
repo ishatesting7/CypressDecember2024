@@ -42,8 +42,6 @@ describe('Aliasing Demo', ()=>{
         [attribute = 'value']
         4. If you are aware about the attribute, value and tagname then the CSS Selector will be
         tagname[attribute = 'value']
-
-
         */
 
 

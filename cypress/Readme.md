@@ -187,3 +187,46 @@ Assignment - 10th Jan - 2025
 - Read all the table value from the table.
 - Count the number of rows and columns 
 - Click on the pagination at the bottom of the page
+
+
+Step1 - 
+
+WebSite URL - https://ecommerce-playground.lambdatest.io/index.php?route=account/login
+
+
+1. Create all the Pages file - Give proper naming convention
+
+loginPage.js
+accountPage.js
+registerPage.js
+
+PageElement and PageAction
+
+2. Create Folder and SubFolder
+
+HomePage
+    - Login
+    - Register
+Search
+    - SearchAndCheckout
+    - Search
+Checkout
+    - Checkout
+    - CheckoutwithPromoCode
+    - CheckoutWithDiffPaymentMethod
+
+3. Create Reusable Component
+
+genericUtils.js
+
+=============================================================
+
+API Testing - Manual Testing
+-----------
+- Postman
+- SOAP UI
+- Swagger
+- JMeter
+
+
+
