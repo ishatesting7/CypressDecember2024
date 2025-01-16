@@ -43,4 +43,56 @@ describe('Alerts', ()=>{
         cy.get('#result').should('have.text','You clicked: Cancel');
 
     })
+
+    it('JS Alert - Enter the Value', ()=>{
+
+        cy.visit('https://the-internet.herokuapp.com/javascript_alerts');
+
+
+        cy.window().then((wind)=>{
+
+            cy.stub(wind,'prompt').returns('Hello I am in Cypress');
+        })
+
+        cy.get('[onclick="jsPrompt()"]').click();
+
+
+        cy.get('#result').should('have.text','You entered: Hello I am in Cypress')
+    
+    })
+
+
+    it('JS Alert - Enter the Value', ()=>{
+
+        cy.visit('https://the-internet.herokuapp.com/javascript_alerts');
+
+        cy.window().then((wind)=>{
+
+            cy.stub(wind,'prompt').returns('Hello I am in Cypress');
+        })
+        
+        cy.get('[onclick="jsPrompt()"]').click();
+
+        cy.on('window:confirm', ()=>false);
+
+        cy.get('#result').should('have.text','You entered: Hello I am in Cypress')
+    
+    })
+
+    it.only('Authetication for the URL', ()=>{
+
+        cy.visit('https://the-internet.herokuapp.com/basic_auth',{
+            auth:{
+                username:"admin",
+                password:"admin"
+            }
+
+
+        })
+
+        //cy.visit('https://admin:admin@the-internet.herokuapp.com/basic_auth');
+
+        cy.get('p').wait(3000).should('contain.text','Congratulations!');
+    })
 })
+
