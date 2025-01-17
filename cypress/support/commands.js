@@ -9,6 +9,24 @@
 // ***********************************************
 //
 //
+Cypress.Commands.add('loginIntoOrange', ()=>{
+
+       cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
+
+        cy.get('[name="username"]').type('Admin');
+
+        cy.get('[name="password"]').type('admin123',{log:false});
+
+        cy.get('[type="submit"]').click();
+
+})
+
+
+
+
+
+
+
 // -- This is a parent command --
 Cypress.Commands.add('loginOrange', (email, password, flag) => { 
 
