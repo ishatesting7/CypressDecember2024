@@ -6,13 +6,26 @@ const path = require('path');
 const XLSX = require('xlsx');
 
 module.exports = defineConfig({
+  reporter: 'cypress-mochawesome-reporter',
+  reporterOptions: {
+    charts: true,
+    reportPageTitle: 'Cypress Automation Test Report',
+    embeddedScreenshots: true,
+    inlineAssets: true,
+    saveAllAttempts: false,
+  },
   watchForFileChanges:false,
   pageLoadTimeout:60000,
   chromeWebSecurity:false,
+  //video:true,
+  //testIsolation:false,
   //viewportHeight:667,
   //viewportWidth:375,
   e2e: {
     setupNodeEvents(on, config) {
+      require('cypress-mochawesome-reporter/plugin')(on);
+
+
       on('task', {downloadFile})
       on('task',{
         copyFile({source,destination

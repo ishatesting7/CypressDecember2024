@@ -17,7 +17,7 @@ describe('Radio Button and Checkbox Demo', ()=>{
     })
 
 
-    it.only("Checkbox", ()=>{
+    it("Checkbox", ()=>{
 
         cy.visit('https://testautomationpractice.blogspot.com/');
 
@@ -29,7 +29,7 @@ describe('Radio Button and Checkbox Demo', ()=>{
 
         cy.get('[type="checkbox"]').uncheck().should('not.be.checked');
 
-        cy.get('[type="checkbox"').should('have.length.above',11).should('have.length',12).should('have.length.at.least',11);
+        cy.get('[type="checkbox"').should('have.length.above',17).should('have.length',12).should('have.length.at.least',11);
 
         
         //cy.get()

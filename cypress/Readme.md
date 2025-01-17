@@ -220,6 +220,12 @@ Checkout
 genericUtils.js
 
 =============================================================
+Topic to be coverend (Left out topic)
+
+- cy.session
+- cy.origin
+
+
 
 API Testing - Manual Testing
 -----------

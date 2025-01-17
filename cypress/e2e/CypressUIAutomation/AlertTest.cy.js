@@ -88,11 +88,14 @@ describe('Alerts', ()=>{
             }
 
 
+        
         })
 
+        
         //cy.visit('https://admin:admin@the-internet.herokuapp.com/basic_auth');
 
         cy.get('p').wait(3000).should('contain.text','Congratulations!');
+        
     })
 })
 
