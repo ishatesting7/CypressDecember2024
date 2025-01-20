@@ -2,6 +2,14 @@ const { defineConfig } = require("cypress");
 const {downloadFile} = require('cypress-downloadfile/lib/addPlugin')
 const fs = require('fs');
 
+
+//Changes for Cucumber 
+import createBundler from "@bahmutov/cypress-esbuild-preprocessor";
+import { addCucumberPreprocessorPlugin } from "@badeball/cypress-cucumber-preprocessor";
+import { createEsbuildPlugin } from "@badeball/cypress-cucumber-preprocessor/esbuild";
+import plugin from "cypress-mochawesome-reporter/plugin";
+
+
 const path = require('path');
 const XLSX = require('xlsx');
 
@@ -17,14 +25,24 @@ module.exports = defineConfig({
   watchForFileChanges:false,
   pageLoadTimeout:60000,
   chromeWebSecurity:false,
+  
   //video:true,
   //testIsolation:false,
   //viewportHeight:667,
   //viewportWidth:375,
   e2e: {
+    specPattern:"**/*.feature",
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
 
+      const bundler = createBundler({
+        plugins:[createEsbuildPlugin(config)],
+      });
+      on("file:preprocessor",bundler);
+
+      addCucumberPreprocessorPlugin(on, config);
+      return config;
+    
 
       on('task', {downloadFile})
       on('task',{

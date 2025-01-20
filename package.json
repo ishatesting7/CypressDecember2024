@@ -4,7 +4,9 @@
   "description": "Basic of Cypress and Javascript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sanityTest": "npx cypress run --spec cypress/e2e/CypressUIAutomation/AlertTest.cy.js",
+    "test2": "asd"
   },
   "keywords": [
     "cypress",
@@ -23,6 +25,7 @@
     "cypress-xpath": "^2.0.1"
   },
   "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.0",
     "cypress-downloadfile": "^1.2.4",
     "neat-csv": "^5.2.0",
     "prompt-sync": "^4.2.0",

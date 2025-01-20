@@ -234,5 +234,49 @@ API Testing - Manual Testing
 - Swagger
 - JMeter
 
+---------------------
+
+Cucumber BDD
+------------
+Features
+Scenario
+Scenario outline
+Example
+Background
+Tags
+<parameter>
+
+2 Major File
+
+.feature File - Plain Gherkin Language
+Given When And Then
 
 
+File - .feature
+---------------
+Given user launch the url "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+When user enter the credentials <username> and <password>
+And user click on Login button
+Then user navigate to home page
+
+stepDefinition
+--------------
+
+@Given
+user_launch_the_url()
+{
+    cy.visit('url')
+}
+
+@When
+when_user_enter_the_credentials()
+{
+    cy.get('locator').type();
+
+}
+
+stepDefinition File
+
+Steps to configure Cypress Cucumber Project - 
+
+1. npm install @badeball/cypress-cucumber-preprocessor
