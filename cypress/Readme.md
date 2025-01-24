@@ -280,3 +280,52 @@ stepDefinition File
 Steps to configure Cypress Cucumber Project - 
 
 1. npm install @badeball/cypress-cucumber-preprocessor
+
+API Testing (REST API)
+---------------------
+Postman
+Swagger
+ReadyAPI
+
+Performance Testing
+JMeter
+
+
+Endpoint - https://www.easemytrip.com/search.aspx/CheckSignIn
+Method Type - POST
+Status Code - 200
+Request Payload
+    {d: " not valid user"}
+Response Payload 
+    {"d":" not valid user"}
+
+JSON - Java Single Object Notation
+Frontend ------> APIs -------> Backend
+(Client)                        (Server)
+Backend ------> APIs --------> Frontend
+Status Code - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+Endpoint - https://www.easemytrip.com/api/flight/GetDate
+Method Type - GET
+Response - "2025-01-24"
+
+1. Validate the URL provided
+2. Validate the Response Status Code
+3. Validate the Response Message
+4. Validate the Method Type which has been passed for the API
+5. Validate the API by passing incorrect method type (405 Method Not Supported)
+
+
+POSTMAN - WebVersion as well Application
+
+- Collection
+    - Folder 1
+        - subfolder
+    - Folder 2
+        - subfolder
+        
+- Environment
+    
+- Work Flow
+
+- APIs
