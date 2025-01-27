@@ -33,7 +33,9 @@ module.exports = defineConfig({
   //viewportWidth:375,
   e2e: {
     
+    
     baseUrl:"https://docs.cypress.io/",
+
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
 

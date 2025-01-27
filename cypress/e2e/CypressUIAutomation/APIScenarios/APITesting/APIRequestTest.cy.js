@@ -1,14 +1,16 @@
 describe('API Testing',()=>{
 
 
-    it('GET Call',()=>{
+    it.only('GET Call',()=>{
 
         cy.request('GET','https://jsonplaceholder.typicode.com/posts/1')
         .its('status')
         .should('equal',200)
     })
 
-    it('POST Call',()=>{
+
+
+    it.only('POST Call',()=>{
 
         cy.request({
             method: 'POST',
@@ -24,13 +26,13 @@ describe('API Testing',()=>{
         .its('status')
         .should('equal',201)
 
-        cy.request('GET','https://jsonplaceholder.typicode.com/posts/1')
+        cy.request('GET','https://jsonplaceholder.typicode.com/posts/5')
         .its('status')
         .should('equal',200)
     })
 
 
-    it('PUT Call',()=>{
+    it.only('PUT Call',()=>{
 
         cy.request({
             method: 'PUT',
@@ -51,7 +53,7 @@ describe('API Testing',()=>{
 
     })
 
-    it('Delete API',()=>{
+    it.only('Delete API',()=>{
 
         cy.request({
             method:'DELETE',
