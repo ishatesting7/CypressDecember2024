@@ -45,8 +45,6 @@ function reverseWords(s) {
 let s = "I am new to JAVA";
 console.log(reverseWords(s));
 
-
-
 /*
 
 <ul>
