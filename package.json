@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sanityTest": "npx cypress run --spec cypress/e2e/CypressUIAutomation/AlertTest.cy.js",
+    "test:addToCart":"npx cypress run --spec cypress/e2e/CypressUIAutomation/DropdownDemoTest.cy.js",
+    "test:registerFlow":"npx cypress run --spec cypress/e2e/CypressUIAutomation/FixtureTest.cy.js",
     "test2": "asd"
   },
   "keywords": [
