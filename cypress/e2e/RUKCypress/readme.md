@@ -50,3 +50,29 @@ git branch <branchname>
 git checkout <branchname>
 
 
+API Side
+--------
+
+Backend Testing - API 
+Application Programming Interface
+
+GET
+POST
+PUT 
+PATCH 
+DELETE
+
+400
+201
+200
+403
+404
+405
+500 
+503
+
+
+
+
+
+
