@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 const {downloadFile} = require('cypress-downloadfile/lib/addPlugin')
 const fs = require('fs');
+const db = require('./cypress/db.js');
 
 
 const cucumber = require("@badeball/cypress-cucumber-preprocessor").default;
@@ -15,6 +16,7 @@ const path = require('path');
 const XLSX = require('xlsx');
 
 module.exports = defineConfig({
+  experimentalWebKitSupport:true,
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     charts: true,
@@ -37,6 +39,13 @@ module.exports = defineConfig({
     baseUrl:"https://docs.cypress.io/",
 
     setupNodeEvents(on, config) {
+      on('task', {
+        queryDatabase({ query, params }) {
+          return db.query(query, params);
+        }
+      });
+      
+      
       require('cypress-mochawesome-reporter/plugin')(on);
 
       // const bundler = createBundler({

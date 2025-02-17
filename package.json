@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sanityTest": "npx cypress run --spec cypress/e2e/CypressUIAutomation/AlertTest.cy.js",
-    "test:addToCart":"npx cypress run --spec cypress/e2e/CypressUIAutomation/DropdownDemoTest.cy.js",
-    "test:registerFlow":"npx cypress run --spec cypress/e2e/CypressUIAutomation/FixtureTest.cy.js",
+    "test:addToCart": "npx cypress run --spec cypress/e2e/CypressUIAutomation/DropdownDemoTest.cy.js",
+    "test:registerFlow": "npx cypress run --spec cypress/e2e/CypressUIAutomation/FixtureTest.cy.js",
     "test2": "asd"
   },
   "keywords": [
@@ -26,11 +26,13 @@
     "cypress-iframe": "^1.0.1",
     "cypress-mochawesome-reporter": "^3.8.2",
     "cypress-xpath": "^2.0.1",
-    "esbuild": "^0.24.2"
+    "esbuild": "^0.24.2",
+    "playwright-webkit": "^1.50.1"
   },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^22.0.0",
     "cypress-downloadfile": "^1.2.4",
+    "mysql": "^2.18.1",
     "neat-csv": "^5.2.0",
     "prompt-sync": "^4.2.0",
     "xlsx": "^0.18.5"
