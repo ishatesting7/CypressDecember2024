@@ -1,0 +1,46 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "JSONPlaceholder API",
+      "description": "Schema definition for the `/posts` endpoint",
+      "version": "1.0.0"
+    },
+    "paths": {
+      "/posts": {
+        "get": {
+          "summary": "Get list of posts",
+          "description": "Returns a list of posts with user details.",
+          "responses": {
+            "200": {
+              "description": "A successful response containing a list of posts",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "userId": {
+                          "type": "integer"
+                        },
+                        "id": {
+                          "type": "integer"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "body": {
+                          "type": "string"
+                        }
+                      },
+                      "required": ["userId", "id", "title", "body"]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
