@@ -71,8 +71,21 @@ DELETE
 500 
 503
 
+Page Object Model
+-----------------
 
-
-
-
+- Page File (.js) - 50 Pages, 100 Pages
+    - Page Element
+    - Page Action
+- Test Cases
+    - Login
+    - Registration
+- Support
+    - e2e.js
+    - command.js
+        - Custom Command
+        - Any Dependency (import cypress/xpath)
+- Fixtures
+    - JSON Data
+    - All other data's (XSLX, CSV, Image, PDF)
 
