@@ -4,7 +4,15 @@
     "firstName": "QA",
     "lastName": "Test",
     "email": "test@yopmail,com",
-    "password": "123",
+    "password": "12345678",
     "phone": "123123123",
-    "userStatus": 1
-}
+    "userStatus": 1,
+    "address": {
+      "street": "123",
+      "city": "Pune",
+      "state": {
+        "value": "MH",
+        "pincode": 4011      },
+      "zip": "411057"
+    }
+  }

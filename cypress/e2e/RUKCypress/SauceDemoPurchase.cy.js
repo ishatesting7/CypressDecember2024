@@ -23,7 +23,6 @@ describe('SauceDemo - Login Tests', () => {
         cartStepOnePage.enterPostalCode('12345');
         cartStepOnePage.clickContinueButton();
 
-
     });
 
 });

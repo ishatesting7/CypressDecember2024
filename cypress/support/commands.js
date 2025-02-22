@@ -114,3 +114,9 @@ Cypress.Commands.add('readExcelFile', (filePath) => {
    cy.get('#password').type(password);
    cy.get('#login-button').click();
 });
+
+
+
+Cypress.Commands.add('writeToExcel', (data, filePath) => {
+   return cy.task('writeToExcel', { data, filePath });
+ });
